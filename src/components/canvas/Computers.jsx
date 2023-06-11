@@ -16,7 +16,7 @@ const Computers = (isMobile) => {
         penumbra={1}
         intensity={1}
         castShadow
-        shadow-mopSize={1024}
+        shadow-mapSize={1024}
       />
       <primitive
         object={computer.scene}
@@ -51,7 +51,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camara={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
